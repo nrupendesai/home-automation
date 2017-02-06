@@ -168,6 +168,7 @@ function createAC(data){
 }
 
 function changeTemperature(sliderObj){
+	var server_url = window.location.protocol+"//"+window.location.host+"/";	
 	var new_temp = $("#new_temp").text();
 	$
 	.ajaxSetup({
@@ -191,7 +192,7 @@ function changeTemperature(sliderObj){
 	});
 $.ajax({
 method : 'POST',
-url : 'http://adobe.my-labs.info/',
+url : server_url,
 data : {'new_temp' : new_temp},
 });
 
