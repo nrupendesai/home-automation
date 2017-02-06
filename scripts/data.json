@@ -1,0 +1,59 @@
+{
+	"home_structure": 
+	{
+		"kitchen": "Kitchen",
+		"main-hall": "Main Hall",
+		"master-bed": "Master Bedroom",
+		"child-bed": "Child Bedroom",
+		"guest": "Guest Room"
+	},
+
+	"main-hall": 
+	{
+		"TV": false,
+		"Lamp": true,
+		"Table-Fan": false
+	},
+
+	"general": 
+	{
+		"air_conditioner": 
+		{
+			"status": true,
+			"temp": 70
+		},
+
+		"refrigerator": true,
+		"stove": true,
+		"microwave": true,
+		"internet": true
+	},
+
+	"kitchen": 
+	{
+		"TV": false,
+		"Lamp": true,
+		"Table-Fan": false
+	},
+
+	"master-bed": 
+	{
+		"TV": false,
+		"Lamp": true,
+		"Table-Fan": false
+	},
+
+	"child-bed": 
+	{
+		"TV": false,
+		"Lamp": true,
+		"Table-Fan": false
+	},
+
+	"guest": 
+	{
+		"TV": false,
+		"Lamp": true,
+		"Table-Fan": false
+	}
+}
