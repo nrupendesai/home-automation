@@ -1,12 +1,12 @@
 function changeButton(btnObject) {
-	
+var server_url = window.location.protocol+"//"+window.location.host+"/";	
 	var status = $(btnObject).parent().prev();
 	if (status.text() == 'On') {
 		// send off signal
-		callAjax('POST', 'http://adobe.my-labs.info/', {}, btnObject, true);
+		callAjax('POST', server_url, {}, btnObject, true);
 	} else {
 		// send on signal
-		callAjax('POST', 'http://adobe.my-labs.info/', {}, btnObject, false);
+		callAjax('POST', server_url, {}, btnObject, false);
 	}
 }
 function callAjax(method, url, data, elementObject, isOn) {
@@ -67,7 +67,7 @@ function notify(obj, msg, css_class) {
 $(document).ready(
 		function() {
 			$.ajax({
-				url : "http://adobe.my-labs.info/scripts/data.json",
+				url : server_url+"scripts/data.json",
 				dataType : 'json',
 				success : function(data) {
 					var structure = data.home_structure;
