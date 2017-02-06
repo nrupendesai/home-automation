@@ -66,6 +66,7 @@ function notify(obj, msg, css_class) {
 }
 $(document).ready(
 		function() {
+			var server_url = window.location.protocol+"//"+window.location.host+"/";	
 			$.ajax({
 				url : server_url+"scripts/data.json",
 				dataType : 'json',
